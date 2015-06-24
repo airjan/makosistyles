@@ -1,0 +1,333 @@
+/*
+Description: Custom CSS for form elements
+Author: Rion Alexander @ Mustard Marketing.
+Tags: form element, inputs, buttons, etc
+
+GLOSSERY
+- - - input | textarea | select | .form-contol (bootstrap)
+- - - select
+- - - bootstrap buttons
+- - - custom buttons
+- - - input groups
+- - - additional bootstrap elements
+*/
+
+/* ****************************************************** INPUT | TEXTAREA | SELECT */
+input, select, textarea, .form-control {
+    color: #999;
+    margin:0; 
+    outline:none transparent;
+    -webkit-box-shadow: inset 0 0px 0px rgba(0, 0, 0, .075);
+            box-shadow: inset 0 0px 0px rgba(0, 0, 0, .075);
+    -webkit-transition: border-color ease-in-out .15s, -webkit-box-shadow ease-in-out .15s;
+         -o-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+            transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+    -webkit-transition:all 0.3s linear;
+     -khtml-transition:all 0.3s linear;
+       -moz-transition:all 0.3s linear;
+        -ms-transition:all 0.3s linear;
+         -o-transition:all 0.3s linear;
+            transition:all 0.3s linear;
+}
+
+input, select, textarea, .form-control, .input-group-addon {
+    -webkit-border-radius:0px !important;
+       -moz-border-radius:0px !important;
+            border-radius:0px !important;
+}
+
+input, textarea { 
+    -webkit-transition:all 0.3s linear; 
+     -khtml-transition:all 0.3s linear; 
+       -moz-transition:all 0.3s linear;
+        -ms-transition:all 0.3s linear;
+         -o-transition:all 0.3s linear; 
+            transition:all 0.3s linear;
+}
+
+input:hover, select:hover, textarea:hover, select.form-control:hover {
+    outline:none transparent;
+    background-color: rgba(249, 249, 249, 0.7);
+    -khtml-opacity:0.9; 
+      -moz-opacity:0.9;
+           opacity:0.9;
+    -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=90)";
+        filter:alpha(opacity=90); 
+}
+
+input:focus, select:focus, textarea:focus, .form-control:focus {
+    outline:none transparent; 
+    background-color: rgba(249, 249, 249, 0.7);
+    border-color: #ccc; 
+    -webkit-box-shadow: inset 0 0px 0px rgba(0,0,0,.075),0 0 0px rgba(102,175,233,.6);
+            box-shadow: inset 0 0px 0px rgba(0,0,0,.075),0 0 0px rgba(102,175,233,.6);
+    -khtml-opacity:0.85;
+      -moz-opacity:0.85; 
+           opacity:0.85; 
+    -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=85)";
+        filter:alpha(opacity=85);
+}
+
+input::-webkit-input-placeholder { color:;}
+textarea::-webkit-input-placeholder { color:;}
+
+input:-moz-placeholder { color:;} /* Firefox 18- */
+textarea:-moz-placeholder { color:;} /* Firefox 18- */
+input::-moz-placeholder { color:;} /* Firefox 19+ */
+textarea::-moz-placeholder { color:;} /* Firefox 19+ */
+
+input:-ms-input-placeholder { color:;}
+textarea:-ms-input-placeholder { color:;}
+
+
+.form-control::-moz-placeholder { color:#999; opacity: 1;}
+.form-control:-ms-input-placeholder { color:#999;}
+.form-control::-webkit-input-placeholder { color:#999;}
+
+input:focus::-webkit-input-placeholder { color:#BDBDBD !important;}
+textarea:focus::-webkit-input-placeholder { color:#BDBDBD !important;}
+
+.form-control:focus::-moz-placeholder { color:#BDBDBD; opacity: 1;}
+.form-control:focus:-ms-input-placeholder { color:#BDBDBD;}
+.form-control:focus::-webkit-input-placeholder { color:#BDBDBD;}
+
+.form-control[disabled],
+.form-control[readonly],
+fieldset[disabled] .form-control { background-color:#eee; opacity: 1;}
+
+.form-inline .form-control {width: 100%;}
+
+.checkbox input[type=checkbox], .checkbox-inline input[type=checkbox], .radio input[type=radio], .radio-inline input[type=radio], 
+.input-group-addon input[type=checkbox], .input-group-addon input[type=radio] { height: auto;}
+
+/* ****************************************************** INPUT | TEXTAREA | SELECT */
+
+/* ****************************************************** SELECT */
+
+select.form-control {
+    color: #999;
+    outline: none;
+    font-size: 1em;
+    padding: 15px 2px 15px 5px;
+    -webkit-appearance: none;
+       -moz-appearance: none;
+         -o-appearance: none;
+            appearance: none;
+    border-radius: 0px;
+    background: no-repeat url(../img/icons/caret.gif) 100% 50%;
+    padding-left: 15px;
+    white-space: nowrap;
+    -webkit-border-radius: 1px;
+       -moz-border-radius: 1px;
+    width: 100%;
+}
+
+/* ****************************************************** SELECT END */
+
+.form-control, input[type=date], .form-inline .btn, .input-group-btn .btn, .input-group-addon, select, select[multiple], select[size], .comment-label { height: 54px; padding: 16px 14px;}
+
+table .form-control, table input[type=date], table .form-inline .btn, table .input-group-btn .btn, table .input-group-addon, table select, table select[multiple], table select[size], table .comment-label { height: 38px; padding: 5px 14px;}
+
+/* ****************************************************** BOOTSRAP BUTTONS */
+
+a, a:visited { color: #EF1E44;}
+a:hover { color: #4E4D50;}
+
+.comment-label {
+    color: #888;
+    background-color: #eee;
+    opacity: 1;
+    position: relative;
+}
+
+.comment-label:before {
+    content: '';
+    width: 0;
+    height: 0;
+    border-top: 10px solid transparent;
+    border-right: 12px solid #eee;
+    border-bottom: 10px solid transparent;
+    position: absolute;
+    top: 30%;
+    bottom: 30%;
+    right: 100%;
+    z-index: 5;
+}
+
+
+.btn, [class*="btn-custom-"], [class*="btn-custom-"]:active, [class*="btn-custom-"]:visited {padding: 6px 12px;}
+.btn, .btn:visited, [class*="btn-custom-"], [class*="btn-custom-"]:visited, [class*="btn-custom-"]:active {
+    display: inline-block;
+    margin-bottom: 0;
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 1.42857143;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    -ms-touch-action: manipulation;
+        touch-action: manipulation;
+    cursor: pointer;
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+    background-image: none;
+    border: 1px solid transparent;
+    border-radius: 0px;
+}
+
+.btn:hover, .btn:focus {opacity:0.75; -khtml-opacity:0.75; -moz-opacity:0.75; filter:alpha(opacity=75); -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=75)";}
+
+.btn-default {
+    color: #333 !important;
+    background-color: #fff;
+    border-color: #ccc;
+}
+
+.btn-default:hover,
+.btn-default:focus, .btn-default.focus,
+.btn-default:active, .btn-default.active,
+.open > .dropdown-toggle.btn-default {
+    color: #333 !important;
+    background-color: #e6e6e6;
+    border-color: #adadad;
+}
+
+.btn-primary {
+    color: #fff !important;
+    background-color: #337ab7;
+    border-color: #2e6da4;
+}
+
+.btn-primary:hover,
+.btn-primary:focus, .btn-primary.focus,
+.btn-primary:active, .btn-primary.active,
+.open > .dropdown-toggle.btn-primary {
+    color: #fff !important;
+    background-color: #286090;
+    border-color: #204d74;
+}
+
+.btn-success {
+    color: #fff !important;
+    background-color: #5cb85c;
+    border-color: #4cae4c;
+}
+.btn-success:hover,
+.btn-success:focus, .btn-success.focus,
+.btn-success:active, .btn-success.active,
+.open > .dropdown-toggle.btn-success {
+    color: #fff !important;
+    background-color: #449d44;
+    border-color: #398439;
+}
+
+.btn-info {
+    color: #fff !important;
+    background-color: #5bc0de;
+    border-color: #46b8da;
+}
+.btn-info:hover,
+.btn-info:focus, .btn-info.focus,
+.btn-info:active, .btn-info.active,
+.open > .dropdown-toggle.btn-info {
+    color: #fff !important;
+    background-color: #31b0d5;
+    border-color: #269abc;
+}
+
+.btn-warning {
+    color: #fff !important;
+    background-color: #FC9400;
+    border-color: #eea236;
+}
+.btn-warning.active, .btn-warning.focus, 
+.btn-warning:active, .btn-warning:focus, 
+.btn-warning:hover, .open>.dropdown-toggle.btn-warning {
+    color: #fff !important;
+    background-color: #FC9400;
+    border-color: #d58512;
+}
+
+.btn-danger {
+    color: #fff !important;
+    background-color: #C62928;
+    border-color: #d43f3a;
+}
+.btn-danger.active, .btn-danger.focus, 
+.btn-danger:active, .btn-danger:focus, 
+.btn-danger:hover, .open>.dropdown-toggle.btn-danger {
+    color: #fff !important;
+    background-color: #C62928;
+    border-color: #ac2925;
+}
+
+.btn-link {
+
+}
+.btn-link.active, .btn-link.focus, 
+.btn-link:active, .btn-link:focus, 
+.btn-link:hover, .open>.dropdown-toggle.btn-link {
+    text-decoration: none;
+}
+
+.btn-lg,
+.btn-group-lg > .btn {
+    padding: 8px 16px;
+    font-size: 15px;
+    line-height: 1.3333333;
+}
+.btn-sm,
+.btn-group-sm > .btn {
+    padding: 5px 10px;
+    font-size: 12px;
+    line-height: 1.5;
+}
+.btn-xs,
+.btn-group-xs > .btn {
+    padding: 1px 5px;
+    font-size: 12px;
+    line-height: 1.5;
+}
+
+/* ****************************************************** BOOTSRAP BUTTONS END */
+
+/* ****************************************************** BUTTONS CUSTOM */
+
+[class*="btn-custom-"], [class*="btn-custom-"]:visited, [class*="btn-custom-"]:active { }
+[class*="btn-custom-"]:hover, [class*="btn-custom-"]:focus { }
+
+.btn-custom-1, .btn-color-1             { background-color:#EF1E44; color:#FFF;}
+.btn-custom-1:hover, .btn-color-1:hover { background-color:#838384; color:#FFF;}
+
+.btn-custom-2, .btn-color-2             { background-color:#4E4D50; color:#FFF;}
+.btn-custom-2:hover, .btn-color-2:hover { background-color:#838384; color:#FFF;}
+
+.btn-custom-3, .btn-color-3             { background-color:#838384; color:#FFF;}
+.btn-custom-3:hover, .btn-color-3:hover { background-color:#CCC; color:#202020;}
+
+.btn-custom-4, .btn-color-4             { background-color:#FFF; color:#838384;}
+.btn-custom-4:hover, .btn-color-4:hover { background-color:#838384; color:#FFF;}
+
+.btn-custom-5, .btn-color-5             { background-color:#202020; color:#FFF;}
+.btn-custom-5:hover, .btn-color-5:hover { background-color:#838384; color:#FFF;}
+
+/* ****************************************************** BUTTONS CUSTOM END */
+
+/* ****************************************************** BOOTSTRAP INPUT GROUP */
+.input-group-btn:first-child>.btn, .input-group-btn:first-child>.btn-group { margin-right: -2px;}
+[class*="icon-group"] {}
+
+[class*="icon-group"] .addon-icon { background-color: #FFF; color: #808080;}
+[class*="icon-group"] .addon-icon+.form-control, [class*="icon-group"] .bootstrap-select:last-child .selectpicker {border-left: 0 !important;}
+[class*="icon-group"] .form-control:first-child, [class*="icon-group"] .bootstrap-select:first-child .selectpicker {border-right: 0 !important;}
+[class*="icon-group"] .addon-icon i {}
+.icon-group-box .form-control, .icon-group-box .selectpicker { border-width: 1px 0;}
+
+
+.row-flat [class*="col-"]:nth-child(even) { margin-right: 0; margin-left:0;}
+.row-flat .input-group-btn:last-child>.btn, .row-flat .input-group-btn:last-child>.btn-group { margin-left: 0px;}
+
+/* ****************************************************** BOOTSTRAP INPUT GROUP END */
+

@@ -1,0 +1,41 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800);
+@import url('reset-custom.css');
+@import url('forms.css');
+@import url('plugins.css');
+@import url('master-head.css');
+@import url('master-content.css');
+@import url('master-foot.css');
+
+
+
+/*
+Description: A CSS layout template to organise your CSS document
+Author: Rion Alexander @ Mustard Marketing.
+Tags: customize default styles across frameworks
+
+GLOSSERY
+- - - custom reset
+- - - forms				(customise form elements)
+- - - plugins			(add to OR overwrite default plugins and/or frameworks)
+- - - template master	(global styles that are used on every page INCLUDING the home page)
+	   - master head
+	   - master content
+	   - master foot
+- - - template page		(styles subjected to a specific internal page)
+- - - template home		(styles subjected to the home page ONLY)
+- - - media queries
+*/
+
+/* ************************ MASTER COLOR PALETTE
+#8BC727 : green-1-medium
+#A1D259 : green-2-light
+
+#E6E6E6 : grey-1-bg
+#808080 : grey-2
+#4D4D4D : grey-3
+#333    : grey-4
+
+
+*/
+.test-div, .test-div-height { background-color:#555; width:100%;}
+.test-div-height { min-height:100px;}

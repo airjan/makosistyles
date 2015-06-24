@@ -1,0 +1,187 @@
+/* MASTER CONTENT
+================================================== */
+#content { font-size:90%; min-height: 400px; padding-top: 50px;}
+.content h1, .content h2, .content h3, .content h4, .content h5, .content h6 { font-weight:600; margin:0 0 13px 0;}
+.content h1, .content .h1 { font-size: ;}
+.content h2, .content .h2 { font-size: ;}
+.content h3, .content .h3 { font-size: ;}
+.content h4, .content .h4 { font-size: ;}
+.content h5, .content .h5 { font-size: ;}
+.content h6, .content .h6 { font-size: ;}
+.content p { color: #888; margin:0 0 13px 0;}
+
+
+.row-spacing-1 { margin-top: 10px; margin-bottom: 10px;}
+.row-spacing-2 { margin-top: 20px; margin-bottom: 20px;}
+.row-spacing-3 { margin-top: 30px; margin-bottom: 30px;}
+.row-spacing-4 { margin-top: 40px; margin-bottom: 40px;}
+
+
+.content-round { border-radius:10px;}
+.lead { font-size: 100%;}
+
+.page-title h1 { color: #EF1E44;}
+.page-title h1 span { font-weight: 300;}
+
+[class*="btn-ico-"] { display: inline-block; font-size: 20px;}
+.btn-ico-1, .btn-ico-1:active, .btn-ico-1:visited {}
+.btn-ico-1:hover {}
+.btn-ico-2, .btn-ico-2:active, .btn-ico-2:visited { color: #4E4D50;}
+.btn-ico-2:hover { color: #EF1E44;}
+
+
+
+.btn-add-project, .btn-add-project:active, .btn-add-project:visited { color: #4E4D50; float: right; position: relative; margin: 15px 0 0 0;}
+.btn-add-project:hover, .btn-add-project:focus { color: #EF1E44;}
+
+.btn-add-project:before { content: '\f055'; color: #4E4D50; font-size:150%; font-family:"FontAwesome"; position: absolute; top: -5px; left: -30px;}
+
+
+
+/* / TIMESHEET
+================================================== */
+
+/* // tabs */
+
+.nav-tabs>li {
+    float: none;
+    display:block;
+    margin-bottom: -1px;
+}
+
+.nav-tabs>li>a {
+    color: #555;
+    border: 1px solid #ddd;
+    border-radius: 0;
+    margin-right: 0;
+    text-align: left;
+}
+
+.nav-tabs>li>a:hover, .nav>li>a:focus {
+    text-decoration: none;
+    background-color: #eee;
+    border: 1px solid #ddd;
+    border-bottom-color: transparent;
+}
+
+.nav-tabs>li.active>a, .nav-tabs>li.active>a:hover, .nav-tabs>li.active>a:focus {
+    color: #555;
+    background-color: #eee;
+    border: 1px solid #ddd;
+    border-bottom-color: transparent;
+}
+
+
+.tabbable {
+    border: 1px solid #ddd;
+    border-width: 0 1px 1px;
+}
+
+.tab-pane { min-height: 300px;}
+
+.tab-row-content { padding: 15px;}
+.tab-row-table { padding: 0 0 25px;}
+/* // tabs */
+/* // tab table */
+.table-sm-btn-group-1 {}
+.column-sm-btn-group-1 { padding:5px 0;}
+.column-sm-btn-group-1 .btn { float: none; width: 100%;}
+
+
+.table-sm-btn-group-2 {}
+.column-sm-btn-group-2 { padding:5px 0;}
+.column-sm-btn-group-2 .btn { float: none; width: 100%;}
+
+
+[class*="table-timesheet"] {}
+[class*="table-timesheet"] tr>th { font-weight: normal;}
+.table-timesheet {}
+
+.table-timesheet-attachement {}
+
+.table-timesheet-attachement>thead>tr>td, 
+.table-timesheet-attachement>tbody>tr>td, 
+.table-timesheet-attachement>tfoot>tr>td {
+    border: 1px solid #F2F2F2;
+    border-width: 1px 0;
+}
+
+[class*="th-"], [class*="td-"] {}
+.th-customer, .td-customer {}
+.th-task, .td-customer {}
+.td-task, .td-task {}
+.th-day, .td-day { width: 6%;}
+.th-total, .td-total {}
+.th-last, .td-last { width: 3%;}
+
+[class*="th-"] { background-color: #F2F2F2;}
+.th-customer { width: 25%;}
+.th-task {}
+.th-day {}
+.th-total {}
+.th-last {}
+
+.th-attachment { width: 25%;}
+.th-file {}
+.th-upload {}
+
+
+[class*="td-"] {}
+.td-customer {}
+.td-task {}
+.td-day {}
+.td-total {}
+.td-last {}
+
+.td-attachment {}
+.td-file {}
+.td-upload {}
+
+.timesheet-foot {}
+.timesheet-foot .btn { float: none; width: 100%; margin: 10px 0;}
+
+/* // tab table */
+
+
+@media only screen and (min-width: 768px) {
+.table-sm-btn-group-1 { float: right; width: auto;}
+.column-sm-btn-group-1 { padding:0 0 0 10px}
+
+.table-sm-btn-group-2 { float: right; width: auto;}
+.column-sm-btn-group-2 { padding:0 0 0 10px}
+
+.timesheet-foot {}
+.timesheet-foot .btn { max-width: 200px;}
+}
+@media only screen and (min-width: 992px) {
+/* // tabs */
+
+.nav-tabs>li {
+    float: none;
+    display: inline-block;
+    margin-bottom: -1px;
+}
+.nav-tabs>li:first-child {
+    float: left;
+}
+
+.nav-tabs>li>a {
+    border: 1px solid #ddd;
+    border-radius: 0;
+}
+
+.nav-tabs>li.active>a, .nav-tabs>li.active>a:hover, .nav-tabs>li.active>a:focus {
+  color: #555;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-bottom-color: transparent;
+}
+
+/* // tabs */
+}
+@media only screen and (min-width: 1200px) {
+
+}
+
+/* MASTER CONTENT END
+================================================== */

@@ -1,0 +1,39 @@
+/* ****************************************************** ----- CUSTOM RESET */
+html, body{ background:#FFF; color:#4E4D50; -webkit-font-smoothing:antialiased; font-family: 'Open Sans', Arial, Helvetica, sans-serif; font-size:100%; width:100%; margin:0; padding:0;}
+html { height:100%;}
+body { background-position:50% 50%; background-size:auto 100%; min-height:100%; position:relative;}
+img, div, a, a:visited, a:active, button {outline:none;}
+img, div, p { margin:0; padding:0;}
+ul, ol { /*padding:8px 8px 8px 23px;*/}
+ul li, ol li { position:relative;}
+input, select, textarea { outline:none;}
+img { width:auto; height:auto;}
+
+.clear, .clear5, .clear15, .clear30 { clear:both; height:0; margin:0;}
+.clear { padding:0;}
+.clear5 { padding:5px 0 0 0;}
+.clear15 { padding:15px 0 0 0;}
+.clear30 { padding:30px 0 0 0;}
+
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 { color:#333; font-weight:normal; outline:none; margin:0 0 13px 0; padding:0;}
+h1, .h1 { font-size:220%;}
+h2, .h2 { font-size:190%;}
+h3, .h3 { font-size:155%;}
+h4, .h4 { font-size:140%;}
+h5, .h5 { font-size:120%;}
+h6, .h6 { font-size:105%;}
+p { margin:0 0 13px 0;}
+
+a, a:visited, a:active { -o-transition:all 0.2s linear; -moz-transition:all 0.2s linear; -khtml-transition:all 0.2s linear; -webkit-transition:all 0.2s linear; -ms-transition:all 0.2s linear; transition:all 0.2s linear;}
+a:hover { text-decoration:none; opacity:0.78; -khtml-opacity:0.78; -moz-opacity:0.78; filter:alpha(opacity=78); -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=78)";}
+
+table { border-collapse:collapse;}
+
+[class*="hr"] { border-top:1px solid #E6E6E6; margin: 0; padding:0 inherit;}
+.hr { height: 1px;}
+.hr-clear { clear: both; height: 1px;}
+
+/*	.shadow { -moz-box-shadow: 3px 3px 4px #777; -webkit-box-shadow: 3px 3px 4px #777; box-shadow: 3px 3px 4px #777; position:relative;}
+	.radius { -webkit-border-radius:5px; -moz-border-radius:5px; border-radius:5px;}
+	.opacity {-moz-opacity: 0.90; -khtml-opacity: 0.90; opacity: 0.90; -ms-filter:"progid:DXImageTransform.Microsoft.Alpha"(Opacity=90);}*/
+/* ****************************************************** ----- CUSTOM RESET END */

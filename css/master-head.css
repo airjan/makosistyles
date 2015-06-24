@@ -1,0 +1,73 @@
+/* ************************ MASTER HEAD */
+
+/* ******** BRAND */
+.subnav .navbar-brand { display:block; float: left; height: auto; width:100%; max-width:118px; margin:0; padding:10px 0;}
+.subnav .navbar-brand img { width:100%; max-width:100%;}
+/* ******** BRAND END */
+
+/* ******** HEAD NAV */
+.link-login { float: left; z-index: 10;}
+
+
+.table-md-subnav {}
+.column-md-subnav { clear: both; vertical-align: middle;}
+
+.table-md-subnav a, .table-md-subnav a:active, .table-md-subnav a:visited { color: #4E4D50;}
+.table-md-subnav a:hover, .table-md-subnav a:focus, .table-md-subnav a.active { color: #EF1E44;}
+
+.table-md-subnav a.active { font-weight: bold;}
+
+
+
+.table-sm-menu {}
+.column-sm-menu {}
+.column-sm-menu+.column-sm-menu {}
+
+.table-sm-menu a, .table-sm-menu a:active, .table-sm-menu a:visited { display: block; line-height: 150%; padding:10px;}
+.table-sm-menu a:hover, .table-sm-menu a:focus { background-color: #F9F9F9; font-size: 104%;}
+
+.table-sm-menu a i { font-size: 50%;}
+
+
+
+.menu-md-sub {}
+.menu-md-sub li { padding:0;}
+
+.menu-user { list-style: none; margin: 0; padding: 0;}
+.menu-user li {}
+
+
+
+.navbar-toggle-sub { background-color: transparent; background-image: none; border: 1px solid transparent; border-radius: 4px; position: relative; float: right; padding: 9px 10px;}
+.navbar-toggle-sub .icon-bar {  background-color: #333; display: block; width: 22px; height: 2px; border-radius: 1px;}
+/* ******** HEAD NAV END */
+
+
+.menu-xs-sub {}
+.menu-xs-sub li {}
+
+
+
+@media only screen and (min-width: 768px) {
+.column-sm-menu+.column-sm-menu { text-align: right;}
+
+.table-sm-menu a, .table-sm-menu a:active, .table-sm-menu a:visited { display: inline-block;}
+.table-sm-menu a:hover, .table-sm-menu li a:focus { background-color: transparent; font-size: 100%;}
+
+
+}
+@media only screen and (min-width: 992px) {
+.link-login { float: right;}
+.navbar-inverse .collapse { float: left; z-index: 5;}
+
+.table-sm-menu a, .table-sm-menu a:active, .table-sm-menu a:visited { background-color: transparent; display: inline-block; padding:0;}
+.table-sm-menu a:hover, .table-sm-menu li a:focus { background-color: transparent; font-size: 100%;}
+
+.menu-md-sub {}
+.menu-md-sub > li { float: left; padding:0 0 0 30px;}
+}
+@media only screen and (min-width: 1200px) {
+
+}
+
+/* ************************ MASTER HEAD END */

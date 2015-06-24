@@ -1,0 +1,20 @@
+/* ************************ MASTER FOOT */
+#foot { color:#808080; font-size:90%;}
+#foot h1, #foot h2, #foot h3, #foot h4, #foot h5, #foot h6 { color:#C9C9C9; font-weight:normal; margin:0 0 13px 0;}
+#foot h1, #foot .h1 { font-size: 130%;}
+#foot h2, #foot .h2 { font-size: 120%;}
+#foot h3, #foot .h3 { font-size: 110%;}
+#foot h4, #foot .h4 { font-size: 105%;}
+#foot h5, #foot .h5 { font-size: 100%;}
+#foot p { margin:0 0 10px 0;}
+
+@media only screen and (min-width: 768px) {
+
+}
+@media only screen and (min-width: 992px) {
+
+}
+@media only screen and (min-width: 1200px) {
+
+}
+/* ************************ MASTER FOOT END */

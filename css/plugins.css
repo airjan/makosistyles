@@ -1,0 +1,241 @@
+/* ****************************************************** ----- PLUGINS */
+
+/* COLUMNS: of same height styles */
+[class*="table-xs"],   .table-xs   { display:table; width:100%;}
+[class*="row-xs"],     .row-xs     { display:table-row;}
+[class*="column-xs"],  .column-xs  { display:table-cell; float:none; vertical-align:top;}
+
+@media only screen and (min-width: 768px) {
+[class*="table-sm"],   .table-sm   { display:table; width:100%;}
+[class*="row-sm"],     .row-sm     { display:table-row;}
+[class*="column-sm"],  .column-sm  { display:table-cell; float:none; vertical-align:top;}
+}
+@media only screen and (min-width: 992px) {
+[class*="table-md"],   .table-md   { display:table; width:100%;}
+[class*="row-md"],     .row-md     { display:table-row;}
+[class*="column-md"],  .column-md  { display:table-cell; float:none; vertical-align:top;}
+}
+@media only screen and (min-width: 1200px) {
+[class*="table-lg"],   .table-lg   { display:table; width:100%;}
+[class*="row-lg"],     .row-lg     { display:table-row;}
+[class*="column-lg"],  .column-lg  { display:table-cell; float:none; vertical-align:top;}
+}
+/* COLUMNS: end */
+
+
+/* COLUMNS MENU: table menu */
+[class*="menu-xs"], [class*="menu-sm"], [class*="menu-md"], [class*="menu-lg"] { list-style: none; padding: 0; margin: 0;}
+
+[class*="menu-xs"]      { display:table; width:100%;}
+[class*="menu-xs"] > li   { display:table-cell; float:none; vertical-align:top;}
+
+@media only screen and (min-width: 768px) {
+[class*="menu-sm"]      { display:table; width:100%; }
+[class*="menu-sm"] > li   { display:table-cell; float:none; vertical-align:top;}
+}
+@media only screen and (min-width: 992px) {
+[class*="menu-md"]      { display:table; width:100%; }
+[class*="menu-md"] > li   { display:table-cell; float:none; vertical-align:top;}
+}
+@media only screen and (min-width: 1200px) {
+[class*="menu-lg"]      { display:table; width:100%; }
+[class*="menu-lg"] > li   { display:table-cell; float:none; vertical-align:top;}
+}
+/* /COLUMNS MENU: table menu */
+
+
+/* COLUMN 5: plugin for bootstrap */
+.col-xs-15,.col-sm-15,.col-md-15,.col-lg-15 { position:relative; min-height:1px; padding-right:15px; padding-left:15px;}
+.col-xs-15 { float:left; width:20%;}
+.col-xs-pull-15 { right:20%;}
+.col-xs-push-15 { left:20%;}
+.col-xs-offset-15 { margin-left:20%;}
+@media (min-width: 768px) {
+.col-sm-15 { float:left; width:20%; }
+.col-sm-pull-15 { right:20%;}
+.col-sm-push-15 { left:20%;}
+.col-sm-offset-15 { margin-left:20%;}
+}
+@media (min-width: 992px) {
+.col-md-15 { float:left; width:20%;}
+.col-md-pull-15 { right:20%;}
+.col-md-push-15 { left:20%;}
+.col-md-offset-15 { margin-left:20%;}
+}
+@media (min-width: 1200px) {
+.col-lg-15 { float:left; width:20%;}
+.col-lg-pull-15 { right:20%;}
+.col-lg-push-15 { left:20%;}
+.col-lg-offset-15 { margin-left:20%;}
+}
+/* COLUMN 5: end */
+
+/* FORM TABLE: vertical - CUSTOM CSS bootstrap plugin */
+.form-table { width:100%;}
+.form-table .row { clear:both; margin-left:-10px !important; margin-right:-10px !important;}
+.form-table [class*="col-"] { margin-bottom:20px; position:relative;}
+
+
+.form-table .col-xs-1, .form-table .col-xs-2, .form-table .col-xs-3, .form-table .col-xs-4, .form-table .col-xs-5, .form-table .col-xs-6, .form-table .col-xs-7, .form-table .col-xs-8, .form-table .col-xs-9, .form-table .col-xs-10, .form-table .col-xs-11, .form-table .col-xs-12, .form-table .col-xs-15, 
+.form-table .col-sm-1, .form-table .col-sm-2, .form-table .col-sm-3, .form-table .col-sm-4, .form-table .col-sm-5, .form-table .col-sm-6, .form-table .col-sm-7, .form-table .col-sm-8, .form-table .col-sm-9, .form-table .col-sm-10, .form-table .col-sm-11, .form-table .col-sm-12, .form-table .col-sm-15, 
+.form-table .col-md-1, .form-table .col-md-2, .form-table .col-md-3, .form-table .col-md-4, .form-table .col-md-5, .form-table .col-md-6, .form-table .col-md-7, .form-table .col-md-8, .form-table .col-md-9, .form-table .col-md-10, .form-table .col-md-11, .form-table .col-md-12, .form-table .col-md-15, 
+.form-table .col-lg-1, .form-table .col-lg-2, .form-table .col-lg-3, .form-table .col-lg-4, .form-table .col-lg-5, .form-table .col-lg-6, .form-table .col-lg-7, .form-table .col-lg-8, .form-table .col-lg-9, .form-table .col-lg-10, .form-table .col-lg-11, .form-table .col-lg-12, .form-table .col-lg-15 { padding:0 10px !important;}
+
+/* FORM TABLE: vertical END */
+
+
+/* NO MORE TABLES: bootsnipp */
+@media only screen and (max-width: 768px) {
+    
+    /* Force table to not be like tables anymore */
+    .table-response-xs table, .table-response-xs thead, 
+    .table-response-xs tbody, .table-response-xs th, 
+    .table-response-xs td, .table-response-xs tr { 
+        display: block; 
+    }
+
+    /* Hide table headers (but not display: none;, for accessibility) */
+    .table-response-xs thead tr { 
+        position: absolute !important;
+        top: -9999px;
+        left: -9999px;
+    }
+
+    .table-response-xs tr { border: 1px solid #ccc; border-width: 1px 0; }
+
+    .table-response-xs td { 
+        /* Behave  like a "row" */
+        border: none;
+        border-bottom: 1px solid #eee; 
+        position: relative;
+        padding-left: 50% !important;
+        white-space: normal;
+        text-align:left;
+        width: 100% !important;
+    }
+
+    .table-response-xs td:before { 
+        /* Now like a table header */
+        position: absolute;
+        /* Top/left values mimic padding */
+        top: 6px;
+        left: 6px;
+        width: 45%; 
+        padding-right: 10px; 
+        white-space: nowrap;
+        text-align:left;
+        font-weight: bold;
+    }
+
+    /* Label the data */
+    .table-response-xs td:before { content: attr(data-title); }
+}
+
+@media only screen and (min-width: 768px) {
+    /* Force table to not be like tables anymore */
+    .table-response-xs table { width: 100%;}
+}
+
+@media only screen and (max-width: 992px) {
+    
+    /* Force table to not be like tables anymore */
+    .table-response-sm table, .table-response-sm thead, 
+    .table-response-sm tbody, .table-response-sm th, 
+    .table-response-sm td, .table-response-sm tr { 
+        display: block; 
+    }
+
+    /* Hide table headers (but not display: none;, for accessibility) */
+    .table-response-sm thead tr { 
+        position: absolute !important;
+        top: -9999px;
+        left: -9999px;
+    }
+
+    .table-response-sm tr { border: 1px solid #ccc; border-width: 1px 0; }
+
+    .table-response-sm td { 
+        /* Behave  like a "row" */
+        border: none;
+        border-bottom: 1px solid #eee; 
+        position: relative;
+        padding-left: 50% !important;
+        white-space: normal;
+        text-align:left;
+        width: 100% !important;
+    }
+
+    .table-response-sm td:before { 
+        /* Now like a table header */
+        position: absolute;
+        /* Top/left values mimic padding */
+        top: 6px;
+        left: 6px;
+        width: 45%; 
+        padding-right: 10px; 
+        white-space: nowrap;
+        text-align:left;
+        font-weight: bold;
+    }
+
+    /* Label the data */
+    .table-response-sm td:before { content: attr(data-title); word-break: break-all; word-wrap: break-word;}
+}
+
+@media only screen and (min-width: 992px) {
+    /* Force table to not be like tables anymore */
+    .table-response-sm table { width: 100%;}
+}
+
+
+
+/* NO MORE TABLES: bootsnipp */
+
+/* BOOTSTRAP: over write */
+
+
+/* nav */
+.navbar-collapse.in {
+  overflow-y: visible;
+} 
+
+.navbar {
+  border-radius: 0px !important;
+}
+
+#bs-example-navbar-collapse-2 {
+  padding-right: 0px;
+  padding-left: 0px;
+}
+
+
+
+/* tables */
+.table-bordered {
+    border: 0px solid #ddd;
+}
+
+.table-bordered>thead>tr>th, .table-bordered>tbody>tr>th, 
+.table-bordered>tfoot>tr>th, .table-bordered>thead>tr>td, 
+.table-bordered>tbody>tr>td, .table-bordered>tfoot>tr>td {
+    border: 1px solid #ddd;
+    border-width: 1px 0;
+}
+.table-condensed>thead>tr>th, .table-condensed>tbody>tr>th {
+    padding: 10px 5px;
+}
+
+.table-condensed>tfoot>tr>th, .table-condensed>thead>tr>td, 
+.table-condensed>tbody>tr>td, .table-condensed>tfoot>tr>td {
+    padding: 8px 5px;
+}
+
+.table-condensed>thead>tr>th:first-child, 
+.table-condensed>tbody>tr>th:first-child, 
+.table-condensed>tfoot>tr>th:first-child, .table-condensed>thead>tr>td:first-child, 
+.table-condensed>tbody>tr>td:first-child, .table-condensed>tfoot>tr>td:first-child {
+    padding: 8px 5px 8px 15px;
+}
+/* BOOTSTRAP: over write END */
+
+/* ****************************************************** ----- PLUGINS END */
